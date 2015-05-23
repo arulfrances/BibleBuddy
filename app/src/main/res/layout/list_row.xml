@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_row_selector"
+    android:padding="8dp">
+
+    <!-- Verse Image -->
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/verse_pic"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="8dp"/>
+
+    <!-- Verse -->
+    <TextView
+        android:id="@+id/verse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/verse_pic"
+        android:layout_toRightOf="@id/verse_pic"
+        android:textSize="@dimen/verse"
+        android:textStyle="italic"  />
+
+    <!-- Author -->
+
+    <TextView
+        android:id="@+id/author"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/verse"
+        android:layout_marginTop="1dip"
+        android:layout_toRightOf="@id/verse_pic"
+        android:textSize="@dimen/author"/>
+
+    <!-- Chapter -->
+    <TextView
+        android:id="@+id/chapter"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/verse_pic"
+        android:layout_below="@id/author"
+        android:textSize="@dimen/chapter"
+        android:textColor="@color/chapter"
+        android:layout_marginTop="5dp"/>
+
+    <!-- Date -->
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/date"
+        android:textSize="@dimen/date"/>
+
+
+
+
+</RelativeLayout>
